@@ -7,13 +7,13 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")  # ⚠️ Required
-    API_HASH = os.environ.get("API_HASH", "")  # ⚠️ Required
+    API_ID = os.environ.get("API_ID", "22549633")  # ⚠️ Required
+    API_HASH = os.environ.get("API_HASH", "34d8c9887fe445c1dac2228cbdf9ab48")  # ⚠️ Required
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")  # ⚠️ Required
 
     # premium 4g renaming client
-    STRING_API_ID = os.environ.get("STRING_API_ID", "")
-    STRING_API_HASH = os.environ.get("STRING_API_HASH", "")
+    STRING_API_ID = os.environ.get("STRING_API_ID", "22549633")
+    STRING_API_HASH = os.environ.get("STRING_API_HASH", "34d8c9887fe445c1dac2228cbdf9ab48")
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
 
     # database config
@@ -24,10 +24,10 @@ class Config(object):
     BOT_UPTIME = time.time()
     START_PIC = os.environ.get("START_PIC", "")
     ADMIN = [int(admin) if id_pattern.search(
-        admin) else admin for admin in os.environ.get('ADMIN', '').split()]  # ⚠️ Required
+        admin) else admin for admin in os.environ.get('ADMIN', '2057170163').split()]  # ⚠️ Required
     
-    FORCE_SUB = os.environ.get("FORCE_SUB", "") # ⚠️ Required Username without @
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))  # ⚠️ Required
+    FORCE_SUB = os.environ.get("FORCE_SUB", "Virus_Botz") # ⚠️ Required Username without @
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002004551100"))  # ⚠️ Required
     FLOOD = int(os.environ.get("FLOOD", '10'))
     BANNED_USERS = set(int(x) for x in os.environ.get(
         "BANNED_USERS", "1234567890").split())
@@ -48,7 +48,7 @@ Tʜɪs Bᴏᴛ Aʟꜱᴏ Sᴜᴘᴘᴏʀᴛs Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟ
 
     ABOUT_TXT = """<b>╭───────────⍟
 ├🤖 ᴍy ɴᴀᴍᴇ : {}
-├👨‍💻 𝙋𝙧𝙤𝙜𝙧𝙖𝙢𝙢𝙚𝙧 : <a href=https://t.me/PCADMINOFFICIALBOT> 𝐏𝐂 </a>
+├👨‍💻 𝙋𝙧𝙤𝙜𝙧𝙖𝙢𝙢𝙚𝙧 : <a href=https://t.me/MrVirus02Bot>會๛『 𝗠𝗿𝗩𝗶𝗿𝘂𝘀𝟬𝟮 』</a>
 ╰───────────────⍟ """
 
     HELP_TXT = """
@@ -72,7 +72,7 @@ Exᴀᴍᴩʟᴇ:- <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 <b>•></b> Sᴇɴᴅ Aɴy Fɪʟᴇ Aɴᴅ Tyᴩᴇ Nᴇᴡ Fɪʟᴇ Nɴᴀᴍᴇ \nAɴᴅ Aᴇʟᴇᴄᴛ Tʜᴇ Fᴏʀᴍᴀᴛ [ document, video, audio ].           
 
 
-<b>⦿ Developer:</b> <a href=https://t.me/PCADMINOFFICIALBOT>𝐏𝐂 </a>
+<b>⦿ Developer:</b> <a href=https://t.me/Virus_Botz>會๛『 𝗩𝗶𝗿𝘂𝘀 𝗕𝗼𝘁𝘇 』 </a>
 """
 
     SEND_METADATA = """
@@ -80,9 +80,9 @@ Exᴀᴍᴩʟᴇ:- <code> /set_caption 📕 Fɪʟᴇ Nᴀᴍᴇ: {filename}
 
 ☞ Fᴏʀ Exᴀᴍᴘʟᴇ:-
 
-◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @PCADMINOFFICIALBOT" -metadata author : @PCADMINOFFICIALBOT" -metadata:s:s title="Subtitled By :- @pcott" -metadata:s:a title="By :- @pcott" -metadata:s:v title="By:- @pcott" </code>
+◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @Virus_Botz" -metadata author : @Virus_Studios" -metadata:s:s title="Subtitled By :- @Virus_Botz" -metadata:s:a title="By :- @Virus_Studios" -metadata:s:v title="By:- @Virus_Botz" </code>
 
-📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @PCADMINOFFICIALBOT
+📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @MrVirus02Bot
 """
 
     PROGRESS_BAR = """<b>\n
