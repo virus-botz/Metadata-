@@ -92,7 +92,7 @@ async def doc(bot, update):
     metadata_path = f"Metadata/{new_filename}"
     file = update.message.reply_to_message
 
-    ms = await update.message.edit(" ** 🚀 𝗣𝗖 𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 🚀 ** ")
+    ms = await update.message.edit(" ** 🚀 𝗗𝗘𝗔𝗗𝗣𝗢𝗢𝗟 💀 𝗧𝗿𝘆𝗶𝗻𝗴 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 🚀 ** ")
     try:
         path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=("\n **🔥 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙎𝙩𝙖𝙧𝙩𝙚𝙙 🔥**", ms, time.time()))
     except Exception as e:
@@ -119,7 +119,7 @@ async def doc(bot, update):
                     return await ms.edit(str(er) + "\n\n**Error**")
             except BaseException:
                 pass
-        await ms.edit("**Metadata added to the file successfully ✅**\n\n⚠️ __**Please wait...**__\n\n**🚨 𝐓𝐫𝐲 𝐓𝐨 𝐔𝐩𝐥𝐨𝐚𝐝 🚨**")
+        await ms.edit("**Metadata added to the file successfully ✅**\n\n⚠️ __**Please wait...**__\n\n**🚨 𝗗𝗘𝗔𝗗𝗣𝗢𝗢𝗟 💀 𝐓𝐫𝐲𝐢𝐧𝐠 𝐓𝐨 𝐔𝐩𝐥𝐨𝐚𝐝 🚨**")
     else:
         await ms.edit(" ** 🚨 𝐓𝐫𝐲 𝐓𝐨 𝐔𝐩𝐥𝐨𝐚𝐝 🚨 ** ")
     
