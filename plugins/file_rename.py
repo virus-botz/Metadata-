@@ -159,7 +159,7 @@ async def doc(bot, update):
             img.convert("RGB").save(ph_path)
         
             # Resize the image
-            resized_img = img.resize((3264, 2040))
+            resized_img = img.resize((,))
             
             # Save the resized image in JPEG format
             resized_img.save(ph_path, "JPEG")
